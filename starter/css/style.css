@@ -1,13 +1,14 @@
 * {
   box-sizing: border-box;
+  margin:0;
+  padding:0;
 }
 
 /*setting root colours for the webpage*/
 :root{--cyan: rgb(0,255, 247);}
 
+/*styling the body of the website*/
 body {
-  margin:0;
-  padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
 }
@@ -15,60 +16,70 @@ body {
 /*styling the header on the website*/
 header{background: var(--cyan);
 width:100%;
-height: 90px;
-position: fixed;
-left: 0;
+height: 100px;
 top: 0;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding-left: 20px;
 }
 
-main{margin-left:20px;
-margin-top:  90px;}
-
-.header{
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-h1{padding-left: 20px;}
-
+/* making the navigation tabs half hte weidth of the header */
 header nav {width:50%;
 }
 
-#superhero{max-width: 20%;
-padding-top: 20px;
-height: auto;
-display: inline;
-}
-
-#herocaption {font-size: 10px;}
-
+/* formatting the link text */
 header nav ul {list-style-type: none;
   display: flex;
   justify-content: space-evenly;
-  flex-wrap: wrap;
-  align-items: center;
 font-size: 1.3em;}
 
+/* adding a margin to the main section */
+main{margin-left:20px;
+}
 
-/*styling the contact section*/
-footer{width: 100%;
-  background: var(--cyan);
+/* fomratting the avatar */
+#superheroimage{
+padding-top: 20px;
+width: 10em;
+height: auto;
+}
+
+/* make the subheading next to the avatar */
+.heroarea {display: flex;
+}
+
+/* center the subheading */
+#subheading {display:flex;
+  align-items: center;
 padding-left: 20px;}
 
-.contact-deets{
-  display:flex;
-  justify-content: left;
-  align-items: baseline;
+/*make the icon caption text size*/
+#herocaption {font-size: 10px;}
+
+/* making section headings cyan */
+.sectionheading {color: var(--cyan);}
+
+/*styling the contact section*/
+footer {width: 100%;
+  height: 75px;
+  background: var(--cyan);
+padding-left: 20px;
+display: flex;
+align-items: center;
+  content:space-evenly;
+  gap: 60px;
 }
 
+/* formatting the contact links */
 #contact p {text-decoration:underline;
 color:black;
-padding: 2em;
-align-items: bottom;
+align-items: center;
 font-size: 1.2em;}
 
-#contact a:hover{color: yellow;
+/*change font color when cursor is covering over link*/
+.infolinks :hover{color: yellow;
 }
 
-#contact a:visited{color:red;}
+/*change font color when link has been clicked*/
+.infolinks :visited{color:red;}
