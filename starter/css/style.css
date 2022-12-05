@@ -58,7 +58,55 @@ padding-left: 20px;}
 #herocaption {font-size: 10px;}
 
 /* making section headings cyan */
-.sectionheading {color: var(--cyan);}
+.sectionheading {color: var(--cyan);
+margin-top: 20px;
+text-decoration:underline}
+
+/* creating structure of the flexgrid */
+#workgrid {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+  "study-guide study-guide"
+  "study-guide study-guide"
+  "comingsoon1 comingsoon2"
+  "comingsoon3 comingsoon4"
+}
+
+#study-guide {
+  grid-area: study-guide;
+  background-color: blue;
+}
+
+#comingsoon1 {
+  grid-area: comingsoon1;
+  background-color: brown;
+}
+
+#comingsoon2 {
+  grid-area: comingsoon2;
+  background-color: yellow;
+}
+
+#comingsoon3 {
+  grid-area: comingsoon3;
+  background-color: green;
+}
+
+#comingsoon4 {
+  grid-area: comingsoon4;
+  background-color:blueviolet;
+}
+
+/* styling the flexgrid */
+.workgridarea{margin: 2px 10px 10px 0px;
+  cursor: pointer;
+}
+
+.workgridarea :hover {
+}
 
 /*styling the contact section*/
 footer {width: 100%;
@@ -69,6 +117,7 @@ display: flex;
 align-items: center;
   content:space-evenly;
   gap: 60px;
+  margin-top: 20px;
 }
 
 /* formatting the contact links */
