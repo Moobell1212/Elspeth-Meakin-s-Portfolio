@@ -6,7 +6,7 @@
 
 /*setting root colours for the webpage*/
 :root{--cyan: rgb(0,255, 247);
---sectionheading: rgb(0, 173, 185)}
+--terquoise: rgb(0, 173, 185)}
 
 /*styling the body of the website*/
 body {
@@ -66,7 +66,7 @@ bottom: 1.2em;
 left: 1em;}
 
 /* making webpage section headings cyan */
-.sectionheading {color: var(--sectionheading);
+.sectionheading {color: var(--terquoise);
   margin-top: 20px;
   text-decoration:underline}
 
@@ -85,6 +85,7 @@ margin-left: 10px;}
   height: auto;
 }
 
+/* formatting of text in the "about me" section */
 #abouttext {padding: 3%;
 font-size: 20px;}
 
@@ -93,7 +94,7 @@ font-size: 20px;}
   margin-top: 15px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 100px 100px 100px 100px;
+  grid-template-rows: 200px 200px 200px 200px;
   grid-template-areas:
   "study-guide study-guide"
   "study-guide study-guide"
@@ -103,7 +104,7 @@ font-size: 20px;}
 
 #study-guide {
   grid-area: study-guide;
-  background-color: blue;
+  background-image: url("../images/Prework-study-guide.png");
 }
 
 #comingsoon1 {
@@ -131,10 +132,24 @@ font-size: 20px;}
   cursor: pointer;
   display: grid;
   align-content: end;
+  background-size: cover;
+  background-position: top;
+  align-items: center;
+  filter: brightness(90%);
+  border: 3px solid var(--terquoise);
 }
 
-.heading{background-color: rgb(0, 139, 128, 0.8);
-border: 2px solid black;
+.workgridarea:hover {filter: brightness(110%);
+  transition: 0.5s;}
+
+.heading{background-color: rgba(0, 173, 185, 0.7);
+border-top: 2px solid rgba(0, 0, 0, 0.5);
+border-right: 2px solid rgba(0, 0, 0, 0.5);
+width: 25%;
+}
+
+.headinglinks p {display: inline;
+padding: 10px;
 }
 
 /*styling the contact section*/
