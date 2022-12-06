@@ -70,19 +70,23 @@ left: 1em;}
   margin-top: 20px;
   text-decoration:underline}
 
-
-
+/* formatting the "about me" section */
+.aboutinfo {display: flex;
+  margin-top: 10px;
+}
 
 /*make the icon caption text size*/
-#herocaption {font-size: 10px;}
-
-
+#herocaption {font-size: 10px;
+margin-left: 10px;}
 
 /* fomratting the avatar */
 #superheroimage{
   width: 170px;
   height: auto;
-  }
+}
+
+#abouttext {padding: 3%;
+font-size: 20px;}
 
 /* creating structure of the flexgrid */
 #workgrid {
