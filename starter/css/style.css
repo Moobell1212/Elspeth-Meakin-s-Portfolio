@@ -5,7 +5,8 @@
 }
 
 /*setting root colours for the webpage*/
-:root{--cyan: rgb(0,255, 247);}
+:root{--cyan: rgb(0,255, 247);
+--sectionheading: rgb(0, 173, 185)}
 
 /*styling the body of the website*/
 body {
@@ -38,36 +39,57 @@ font-size: 1.3em;}
 main{margin-left:20px;
 }
 
-/* fomratting the avatar */
-#superheroimage{
-padding-top: 20px;
-width: 10em;
-height: auto;
+/* formatting the banner */
+.herobanner {overflow: hidden;
+position: relative;
+display: flex;
+text-align: center;
 }
 
-/* make the subheading next to the avatar */
-.heroarea {display: flex;
+/* fill the banner to the width i want and creatinga maximum height */
+#polygonal {width:120%;
+  max-height: 400px;
 }
 
-/* center the subheading */
-#subheading {display:flex;
-  align-items: center;
-padding-left: 20px;}
+/* formatting the subcaption */
+.bannertext {position: absolute;
+  bottom: 3em;
+  right: 3em;
+  max-width: 20%;
+  background-color: var(--cyan);
+  padding: 10px;}
+
+/* formatting the  attribution caption for the banner */
+.bannercaption {position: absolute;
+font-size: 10px;
+bottom: 1.2em;
+left: 1em;}
+
+/* making webpage section headings cyan */
+.sectionheading {color: var(--sectionheading);
+  margin-top: 20px;
+  text-decoration:underline}
+
+
+
 
 /*make the icon caption text size*/
 #herocaption {font-size: 10px;}
 
-/* making section headings cyan */
-.sectionheading {color: var(--cyan);
-margin-top: 20px;
-text-decoration:underline}
+
+
+/* fomratting the avatar */
+#superheroimage{
+  width: 170px;
+  height: auto;
+  }
 
 /* creating structure of the flexgrid */
 #workgrid {
   margin-top: 15px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 100px 100px 100px 100px;
   grid-template-areas:
   "study-guide study-guide"
   "study-guide study-guide"
@@ -103,20 +125,23 @@ text-decoration:underline}
 /* styling the flexgrid */
 .workgridarea{margin: 2px 10px 10px 0px;
   cursor: pointer;
+  display: grid;
+  align-content: end;
 }
 
-.workgridarea :hover {
+.heading{background-color: rgb(0, 139, 128, 0.8);
+border: 2px solid black;
 }
 
 /*styling the contact section*/
 footer {width: 100%;
-  height: 75px;
+  height:75px;
   background: var(--cyan);
 padding-left: 20px;
 display: flex;
 align-items: center;
   content:space-evenly;
-  gap: 60px;
+  gap: 80px;
   margin-top: 20px;
 }
 
@@ -124,7 +149,7 @@ align-items: center;
 #contact p {text-decoration:underline;
 color:black;
 align-items: center;
-font-size: 1.2em;}
+font-size: 1.3em;}
 
 /*change font color when cursor is covering over link*/
 .infolinks :hover{color: yellow;
