@@ -66,11 +66,12 @@ font-size: 10px;
 bottom: 1.2em;
 left: 1em;}
 
+.page-wrapper{background-color: rgb(253, 253, 240);}
+
 /* making webpage section headings cyan */
 .sectionheading {display: flex;
   align-items: center;
   height: 100px;
-  margin-top: -7px;
   padding-left: 20px;
   text-decoration:underline;
 text-decoration-thickness: 3px;
@@ -86,7 +87,7 @@ background-color: aqua;}
 }
 
 /* fomratting the avatar */
-#superheroimage{
+#avatar{
   width: 250px;
   height: auto;
 }
@@ -98,7 +99,9 @@ margin-left: 70px;
 
 /* formatting of text in the "about me" section */
 #abouttext {padding: 4%;
-font-size: 20px;}
+font-size: 20px;
+vertical-align: middle;
+}
 
 /* creating structure of the flexgrid */
 #workgrid {
@@ -190,7 +193,6 @@ footer {width: 100%;
 padding-left: 20px;
 display: flex;
 align-items: center;
-  content:space-evenly;
   gap: 80px;
   margin-top: 20px;
 }
@@ -213,7 +215,7 @@ font-size: 1.3em;}
     max-width: 50%;
     }
 
-  #superheroimage {
+  #avatar {
     width: 25%;
     height: auto;
   }
@@ -240,7 +242,7 @@ font-size: 1.3em;}
     max-width: 50%;
     }
 
-  #superheroimage {
+  #avatar {
     width: 200px;
     height: 200px;
     margin-top: 10px
