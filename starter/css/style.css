@@ -210,7 +210,7 @@ font-size: 1.3em;}
   .bannertext {
     bottom: 1em;
     right: 1em;
-    max-width: 40%;
+    max-width: 50%;
     }
 
   #superheroimage {
@@ -234,12 +234,6 @@ font-size: 1.3em;}
 
 /* media changes for screens under 600px */
 @media screen and (max-width: 600px) {
-  header nav ul {
-    display: block;
-    text-align: right;
-    padding-right: 13%;
-  }
-
   .bannertext {
     bottom: 2em;
     right: 1em;
@@ -252,14 +246,6 @@ font-size: 1.3em;}
     margin-top: 10px
   }
 
-  #herocaption {
-    margin-left: 3em;
-    }
-
-  .heading {width:100%;
-  border-right: none;
-  max-width: none;}
-
   #workgrid {
     grid-template-columns: 1fr;
     grid-template-rows: 200px 200px 200px 200px 200px;
@@ -270,11 +256,6 @@ font-size: 1.3em;}
     "comingsoon3"
     "comingsoon4"
   }
-
-  .gridimageatt {position: absolute;
-    font-size: 10px;
-    bottom: 0.1em;
-    right: 1em;}
 
     footer {
       gap: 2em;
