@@ -8,15 +8,15 @@ This is a professional portfolio to showcase my past front end development proje
 
 There are links in the header of the website which will go to the corresponding section of the webpage.
 
-<img src="starter/images/headerlinks.jpg">
+<img src="images/headerlinks.jpg">
 
 There are links in the grid in the "Work" sections which will lead to the work website and GitHub repository.
 
-<img src="starter/images/worklinks.png">
+<img src="images/worklinks.png">
 
 There are links in the footer of the website which will open the default email application to send an email, to my GitHub profile, and my LinkedIn profile.
 
-<img src="starter/images/contactlinks.png">
+<img src="images/contactlinks.png">
 
 
 ## License
