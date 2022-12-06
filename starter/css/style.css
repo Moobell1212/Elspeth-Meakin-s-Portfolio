@@ -36,10 +36,6 @@ header nav ul {list-style-type: none;
 font-size: 1.3em;
 }
 
-/* adding a margin to the main section */
-main{margin-left:20px;
-}
-
 /* links in page will be yellow when hovered */
 .pagelink :hover, .infolinks :hover{color: rgb(255, 255, 0);
 }
@@ -71,15 +67,22 @@ bottom: 1.2em;
 left: 1em;}
 
 /* making webpage section headings cyan */
-.sectionheading {color: var(--terquoise);
-  margin-top: 20px;
+.sectionheading {display: flex;
+  align-items: center;
+  height: 100px;
+  margin-top: -7px;
+  padding-left: 20px;
   text-decoration:underline;
-text-decoration-thickness: 3px;}
+text-decoration-thickness: 3px;
+background-color: aqua;}
+
+.info {margin-bottom: 20px;}
 
 /* formatting the "about me" section */
 .aboutinfo {display: flex;
   margin-top: 15px;
   font-size: 20em;
+  margin-left: 20px;
 }
 
 /* fomratting the avatar */
@@ -90,10 +93,11 @@ text-decoration-thickness: 3px;}
 
 /*make the icon caption text size*/
 #herocaption {font-size: 10px;
-margin-left: 50px;}
+margin-left: 50px;
+}
 
 /* formatting of text in the "about me" section */
-#abouttext {padding: 3%;
+#abouttext {padding: 4%;
 font-size: 20px;}
 
 /* creating structure of the flexgrid */
@@ -181,7 +185,7 @@ padding: 10px;
 
 /*styling the contact section*/
 footer {width: 100%;
-  height:75px;
+  height:100px;
   background: var(--cyan);
 padding-left: 20px;
 display: flex;
