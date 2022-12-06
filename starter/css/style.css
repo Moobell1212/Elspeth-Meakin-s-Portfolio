@@ -26,17 +26,22 @@ padding-left: 20px;
 }
 
 /* making the navigation tabs half hte weidth of the header */
-header nav {width:50%;
+header nav {width:40%;
 }
 
 /* formatting the link text */
 header nav ul {list-style-type: none;
   display: flex;
   justify-content: space-evenly;
-font-size: 1.3em;}
+font-size: 1.3em;
+}
 
 /* adding a margin to the main section */
 main{margin-left:20px;
+}
+
+/* links in page will be yellow when hovered */
+.pagelink :hover, .infolinks :hover{color: rgb(255, 255, 0);
 }
 
 /* formatting the banner */
@@ -68,22 +73,24 @@ left: 1em;}
 /* making webpage section headings cyan */
 .sectionheading {color: var(--terquoise);
   margin-top: 20px;
-  text-decoration:underline}
+  text-decoration:underline;
+text-decoration-thickness: 3px;}
 
 /* formatting the "about me" section */
 .aboutinfo {display: flex;
-  margin-top: 10px;
+  margin-top: 15px;
+  font-size: 20em;
+}
+
+/* fomratting the avatar */
+#superheroimage{
+  width: 250px;
+  height: auto;
 }
 
 /*make the icon caption text size*/
 #herocaption {font-size: 10px;
-margin-left: 10px;}
-
-/* fomratting the avatar */
-#superheroimage{
-  width: 170px;
-  height: auto;
-}
+margin-left: 50px;}
 
 /* formatting of text in the "about me" section */
 #abouttext {padding: 3%;
@@ -91,10 +98,10 @@ font-size: 20px;}
 
 /* creating structure of the flexgrid */
 #workgrid {
-  margin-top: 15px;
+  margin: 30px 4%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 200px 200px 200px 200px;
+  grid-template-rows: 250px 250px 250px 250px;
   grid-template-areas:
   "study-guide study-guide"
   "study-guide study-guide"
@@ -136,22 +143,8 @@ font-size: 20px;}
   background-position: top;
   align-items: center;
   filter: brightness(90%);
-  border: 3px solid var(--terquoise);
-}
-
-.workgridarea:hover {filter: brightness(110%);
-  transition: 0.5s;}
-
-.heading{background-color: rgba(0, 173, 185, 0.95);
-border-top: 2px solid rgba(0, 0, 0, 0.5);
-border-right: 2px solid rgba(0, 0, 0, 0.5);
-width: 25%;
-max-width: 300px;
-text-align: center;
-}
-
-.headinglinks p {display: inline;
-padding: 10px;
+  border: 4px solid var(--terquoise);
+  filter: brightness(90%);
 }
 
 /* formatting the grid image attributes */
@@ -160,6 +153,31 @@ padding: 10px;
   bottom: 1em;
   right: 1em;
 }
+
+/* animation in the work flex grid when hovering */
+.workgridarea:hover {filter: brightness(110%);
+  transition: 0.5s;
+}
+
+ /* formatting the headers in the work flex grid  */
+.heading{background-color: rgba(0, 173, 185, 0.95);
+border-top: 2px solid rgba(0, 0, 0, 0.8);
+border-right: 2px solid rgba(0, 0, 0, 0.8);
+border-bottom: 2px solid rgba(0, 0, 0, 0.8);
+width: 25%;
+max-width: 300px;
+text-align: center;
+margin-bottom: 10px;
+padding: 5px 10px;
+}
+
+/* formatting the  links in the headers in the work flex grid */
+.headinglinks p {display: inline;
+padding: 10px;
+}
+
+/* change font color for the work flex grid links */
+.gridlink:hover {color: rgb(177, 205, 50)}
 
 /*styling the contact section*/
 footer {width: 100%;
@@ -175,12 +193,4 @@ align-items: center;
 
 /* formatting the contact links */
 #contact p {text-decoration:underline;
-color:black;
 font-size: 1.3em;}
-
-/*change font color when cursor is covering over link*/
-.infolinks :hover{color: yellow;
-}
-
-/*change font color when link has been clicked*/
-.infolinks :visited{color:red;}
