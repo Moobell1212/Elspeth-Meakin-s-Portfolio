@@ -109,22 +109,22 @@ font-size: 20px;}
 
 #comingsoon1 {
   grid-area: comingsoon1;
-  background-color: brown;
+  background-image: url("../images/coding1.jpg");
 }
 
 #comingsoon2 {
   grid-area: comingsoon2;
-  background-color: yellow;
+  background-image: url("../images/coding2.jpg");
 }
 
 #comingsoon3 {
   grid-area: comingsoon3;
-  background-color: green;
+  background-image: url("../images/coding4.jpg");
 }
 
 #comingsoon4 {
   grid-area: comingsoon4;
-  background-color:blueviolet;
+  background-image: url("../images/coding3.jpg");
 }
 
 /* styling the flexgrid */
@@ -142,14 +142,23 @@ font-size: 20px;}
 .workgridarea:hover {filter: brightness(110%);
   transition: 0.5s;}
 
-.heading{background-color: rgba(0, 173, 185, 0.7);
+.heading{background-color: rgba(0, 173, 185, 0.95);
 border-top: 2px solid rgba(0, 0, 0, 0.5);
 border-right: 2px solid rgba(0, 0, 0, 0.5);
 width: 25%;
+max-width: 300px;
+text-align: center;
 }
 
 .headinglinks p {display: inline;
 padding: 10px;
+}
+
+/* formatting the grid image attributes */
+.gridimageatt {position: absolute;
+  font-size: 10px;
+  bottom: 1em;
+  right: 1em;
 }
 
 /*styling the contact section*/
@@ -167,7 +176,6 @@ align-items: center;
 /* formatting the contact links */
 #contact p {text-decoration:underline;
 color:black;
-align-items: center;
 font-size: 1.3em;}
 
 /*change font color when cursor is covering over link*/
